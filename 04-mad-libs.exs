@@ -6,8 +6,16 @@ defmodule MadLibs do
   end
 
   def print_mad_lib(acc) do
-    str = "Do you " <> get_word(acc, :verb) <> " your " <> get_word(acc, :adjective) <> " " <>  get_word(acc, :noun)  <> " " <>  get_word(acc, :adverb)
-    puts str
+    phrases = [
+      "Do you",
+      get_word(acc, :verb),
+      "your",
+      get_word(acc, :adjective),
+      get_word(acc, :noun),
+      get_word(acc, :adverb),
+    ]
+    str = Enum.join(phrases, " ")
+    puts str <> "? That's hilarious!"
   end
 
   defp with_article(atom) do
