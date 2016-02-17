@@ -7,8 +7,14 @@ defmodule CharacterCount do
   end
 
   def count(input) do
-    chars = String.rstrip(input) |> String.length |> Integer.to_string
-    puts(String.rstrip(input) <> " has " <> chars <> " characters.")
+    str = String.rstrip(input)
+    case String.length(str) do
+      0 ->
+        puts("Can't calculate length without a name")
+      count ->
+        chars = Integer.to_string(count)
+        puts(String.rstrip(input) <> " has " <> chars <> " characters.")
+    end
   end
 end
 
