@@ -2,16 +2,21 @@ defmodule SimpleMath do
   import IO, only: [gets: 1, puts: 1]
   import String, only: [rstrip: 1]
 
-  def ask do
-    a = rstrip(gets("What is the first number? "))
-    b = rstrip(gets("What is the second number? "))
-    {a, b}
+  @first_number "What is the first number? "
+  @second_number "What is the second number? "
+
+  def ask(first_question \\ @first_number, second_question \\ @second_number) do
+    a = Float.parse(rstrip(gets(first_question)))
+    b = Float.parse(rstrip(gets(second_question)))
+
+    case {a, b} do
+      {:error, _} -> ask("First number is not a number - try again! " <> @first_number)
+      {_, :error} -> ask("Second nuber is not a number - try again! " <> @second_number)
+      { { a , _ }, { b, _ } } -> { a, b }
+    end
   end
 
-  def print({a, b}) do
-    {a, _} = Float.parse(a)
-    {b, _} = Float.parse(b)
-    numbers = { a, b }
+  def print(numbers) do
     puts Enum.join([
       sum(numbers),
       diff(numbers),
