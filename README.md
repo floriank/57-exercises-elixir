@@ -121,3 +121,10 @@ mix run 13-computing-compound-interest
 
 Computes compound interest over a number of years.
 
+### 14. Tax calulator
+
+```
+mix run 14-tax-calculator
+```
+
+A simple program that checks for the users state and displays a total amount in- or excluding tax.
