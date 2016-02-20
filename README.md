@@ -12,4 +12,4 @@ List of exercises
 5. Simple Math - Basic math operations with conversion between String and Numeric types
 6. Retirement Calculator - Simple math in combination with basic DateTime functionality
 7. Rectangular Room - Calculating an area while using conversion
-
+8. Pizza Party - calculate the number of slices from a pizza (remainder division)
