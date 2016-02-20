@@ -11,7 +11,7 @@ mix deps.get
 List of exercises
 =================
 
-## 01. Saying Hello - simple output
+### 01. Saying Hello - simple output
 
 ```
 mix run 01-saying-hello.exs
@@ -19,7 +19,7 @@ mix run 01-saying-hello.exs
 
 Simple "Hello World" with no special constraints.
 
-## 02. Counting characters - String operations
+### 02. Counting characters - String operations
 
 ```
 mix run 02-counting-characters
@@ -27,7 +27,7 @@ mix run 02-counting-characters
 
 Simple output with String operations.
 
-## 03. Printing quotes
+### 03. Printing quotes
 
 ```
 mix run 03-printing-quotes
@@ -35,7 +35,7 @@ mix run 03-printing-quotes
 
 Simple test for String concatenation without interpolation and escaping quotes
 
-## 04. Mad Libs - Dealing Multiple inputs
+### 04. Mad Libs - Dealing Multiple inputs
 
 ```
 mix run 04-mad-libs.exs
@@ -43,7 +43,7 @@ mix run 04-mad-libs.exs
 
 Concatenating multiple inputs.
 
-## 05. Simple math
+### 05. Simple math
 
 ```
 mix run 05-simple-math.exs
@@ -51,7 +51,7 @@ mix run 05-simple-math.exs
 
 Do simple math operations while sanitizing and converting user input.
 
-## 06. Retirement Calculator
+### 06. Retirement Calculator
 
 ```
 mix run 06-retirement-calculation.exs
@@ -59,7 +59,7 @@ mix run 06-retirement-calculation.exs
 
 Simple math in combination with basic DateTime functionality.
 
-## 07. Rectangular Room
+### 07. Rectangular Room
 
 ```
 mix run 07-recatngular-room.exs
@@ -67,7 +67,7 @@ mix run 07-recatngular-room.exs
 
 Calculating an area while using conversion.
 
-## 08. Pizza Party
+### 08. Pizza Party
 
 ```
 mix run 08-pizza-party.exs
@@ -75,7 +75,7 @@ mix run 08-pizza-party.exs
 
 Calculate the number of slices from a pizza (remainder division)
 
-## 09. Paint calculator
+### 09. Paint calculator
 
 ```
 mix run 09-paint-calculator.exs
@@ -83,7 +83,7 @@ mix run 09-paint-calculator.exs
 
 Given the area of a room, calculate the number of buckets needed to cover the rooms area with paint.
 
-## 10. Item checkout
+### 10. Item checkout
 
 ```
 mix run 10-item-checkout.exs
@@ -91,10 +91,24 @@ mix run 10-item-checkout.exs
 
 Implement a calculation for arbitrary items during checkout (e.g. at a super market).
 
-## 11. Currency exchange
+### 11. Currency exchange
 
 ```
 mix run 11-currency-exchange.exs
 ```
 
 Implement a calculation for arbitrary items during checkout (e.g. at a super market), optionally using the OpenExchangeRates API.
+
+### 12. Computing interest
+
+```
+mix run 12-computing-interest.exs
+```
+
+Computes the a simple intereset value over a number of years:
+
+Challenges:
+
+- Ensure that the values entered for principal, rate, and number of years are numeric 
+- Calculate the end value of the investment
+- print the amount at the end of each year
