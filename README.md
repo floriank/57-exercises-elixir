@@ -160,3 +160,11 @@ mix run 18-temperature-converter.exs
 ```
 
 Simple temperature conversion between Fahrenheit and Celsius. Uses an input loop.
+
+### 19. BMI calculator
+
+```
+mix run 19-bmi-calculator.exs
+```
+
+Given measurements of a person, calculate their BMI (Body mass index).
