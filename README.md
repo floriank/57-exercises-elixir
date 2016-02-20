@@ -105,10 +105,19 @@ Implement a calculation for arbitrary items during checkout (e.g. at a super mar
 mix run 12-computing-interest.exs
 ```
 
-Computes the a simple intereset value over a number of years:
+Computes the simple interest value over a number of years:
 
 Challenges:
 
 - Ensure that the values entered for principal, rate, and number of years are numeric 
 - Calculate the end value of the investment
 - print the amount at the end of each year
+
+### 13. Computing compound interest
+
+```
+mix run 13-computing-compound-interest
+```
+
+Computes compound interest over a number of years.
+
