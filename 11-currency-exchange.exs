@@ -45,14 +45,14 @@ defmodule CurrencyExchange do
   end
 
   defp call_api(euros) do
-    :inets.start
-    {:ok, response} = :httpc.request(:get, {callable_api_url, []}, [], [])
-    { _, _, body } = response
-    {0,euros,0}
+    response = HTTPotion.get(callable_api_url)
+    parsed = response.body |> Poison.Parser.parse!
+    rate = parsed["rates"]["EUR"]
+    {euros * rate, euros, rate}
   end
 
   defp callable_api_url do
-    String.to_char_list "#{@api_url}?app_id=#{@api_key}"
+    "#{@api_url}?app_id=#{@api_key}"
   end
 
   defp ask_values(ask_rate \\ false) do
