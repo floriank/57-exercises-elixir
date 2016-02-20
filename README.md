@@ -144,3 +144,11 @@ mix run 16-legal-driving-age.exs
 ```
 
 Asks the user for their age and then decides if they're old enough to drive.
+
+### 17. Blood alcohol calculator
+
+```
+mix run 17-blood-alcohol-calculator.exs
+```
+
+Asks the user for their body measurements and drinks had and decides whether or not they are allowed to drive.
