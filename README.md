@@ -137,3 +137,10 @@ mix run 15-validating-passwords.exs
 
 Simple password validation to test if/else branches.
 
+### 16. Legal driving age
+
+```
+mix run 16-legal-driving-age.exs
+```
+
+Asks the user for their age and then decides if they're old enough to drive.
