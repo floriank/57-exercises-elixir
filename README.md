@@ -14,3 +14,4 @@ List of exercises
 7. Rectangular Room - Calculating an area while using conversion
 8. Pizza Party - calculate the number of slices from a pizza (remainder division)
 9. Paint calculator - given the area of a room, calculate the number of buckets needed to cover the rooms area with paint
+10. Item checkout - Implement a calculation for arbitrary items during checkout (e.g. at a super market)
