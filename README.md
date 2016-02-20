@@ -152,3 +152,11 @@ mix run 17-blood-alcohol-calculator.exs
 ```
 
 Asks the user for their body measurements and drinks had and decides whether or not they are allowed to drive.
+
+### 18. Temperature converter
+
+```
+mix run 18-temperature-converter.exs
+```
+
+Simple temperature conversion between Fahrenheit and Celsius. Uses an input loop.
