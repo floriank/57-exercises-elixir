@@ -7,9 +7,6 @@ defmodule PizzaParty do
   import String, only: [rstrip: 1]
   import Integer, only: [parse: 1]
 
-  @doc """
-  The slices we can make out of a Pizza
-  """
   @slices_per_pizza 8
 
   @doc """
@@ -49,8 +46,8 @@ defmodule PizzaParty do
       0 ->
         puts "No one is getting any pizza :-("
       _ ->
-        puts "You get " <> Integer.to_string(result) <> " slices per person!"
-        puts "You have " <> Integer.to_string(leftovers) <> " slices as leftovers!"
+        puts "You get " <> Integer.to_string(result) <> " " <> slices(result) <> " per person!"
+        puts "You have " <> Integer.to_string(leftovers) <> " " <>  slices(leftovers) <> " as leftovers!"
     end
   end
 
@@ -58,6 +55,14 @@ defmodule PizzaParty do
     gets(sentence)
       |> rstrip
       |> parse
+  end
+
+  defp slices(number) do
+   if number == 1 do
+     "slice"
+   else
+     "slices"
+   end
   end
 end
 
