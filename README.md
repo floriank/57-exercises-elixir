@@ -116,15 +116,24 @@ Challenges:
 ### 13. Computing compound interest
 
 ```
-mix run 13-computing-compound-interest
+mix run 13-computing-compound-interest.exs
 ```
 
 Computes compound interest over a number of years.
 
-### 14. Tax calulator
+### 14. Tax calculator
 
 ```
-mix run 14-tax-calculator
+mix run 14-tax-calculator.exs
 ```
 
 A simple program that checks for the users state and displays a total amount in- or excluding tax.
+
+### 15. Validating passwords
+
+```
+mix run 15-validating-passwords.exs
+```
+
+Simple password validation to test if/else branches.
+
