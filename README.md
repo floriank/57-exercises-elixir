@@ -168,3 +168,11 @@ mix run 19-bmi-calculator.exs
 ```
 
 Given measurements of a person, calculate their BMI (Body mass index).
+
+### 20. Multistate Tax Calculator 
+
+```
+mix run 20-multistate-tax-calculator.exs
+```
+
+Calculate tax rates for different states in the US, with some branching options for different counties.
