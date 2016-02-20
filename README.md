@@ -192,3 +192,11 @@ mix run 22-comparing-numbers.exs
 ```
 
 Compares three numbers and findest the highest one.
+
+### 23. Troubleshooting cars
+
+```
+mix run 23-troubleshootings-cars.exs
+```
+
+A simple implementation of a decision making tree with multiple questions.
