@@ -20,16 +20,23 @@ defmodule ComputingInterest do
     %{
       total_amount: investment * (1 + rate * years),
       rate: rate,
-      years: years
+      years: years,
+      progression: Enum.reverse(calculate_progression(investment, rate, years))
     }
   end
 
   @doc """
   output the result
   """
-  def print(%{total_amount: amount, rate: rate, years: years}) do
+  def print(%{total_amount: amount, rate: rate, years: years, progression: progression}) do
     puts "After #{years} year(s) of investment at #{rate * 100}%"
-    puts "The investment will be worth #{amount}."
+    puts "The investment will be worth #{Float.round(amount, 2)}."
+    puts "Progression:"
+    Enum.with_index(progression)
+      |> Enum.each(fn({progress, index}) ->
+        amount = Float.to_string(progress, decimals: 2)
+        puts "The investment after #{index + 1} year(s): #{amount}"
+      end)
   end
 
   defp ask_investment do
@@ -53,6 +60,15 @@ defmodule ComputingInterest do
     else
       {value, _} = value
       value
+    end
+  end
+
+  defp calculate_progression(investment, rate, years, acc \\ []) do
+    if years > 1 do
+      added = acc ++ [investment * (1 + rate * years)]
+      calculate_progression(investment, rate, years - 1, added)
+    else
+      acc
     end
   end
 end
