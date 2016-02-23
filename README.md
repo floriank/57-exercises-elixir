@@ -216,3 +216,11 @@ mix run 25-password-strength.exs
 ```
 
 A program to check the strength of a given password.
+
+### 27. Validating inputs
+
+```
+mix run 27-validating-input.exs
+```
+
+Use validation functions to sanitize user inputs
