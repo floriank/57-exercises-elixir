@@ -200,3 +200,11 @@ mix run 23-troubleshootings-cars.exs
 ```
 
 A simple implementation of a decision making tree with multiple questions.
+
+### 24. Anagrams
+
+```
+mix run 24-anagrams.exs
+```
+
+A small program to compare two inputs to see if they are anagrams of each other.
