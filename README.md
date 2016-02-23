@@ -232,3 +232,11 @@ mix run 28-adding-numbers.exs
 ```
 
 A program to add several numbers together.
+
+### 29. Handling bad input
+
+```
+mix run 29-bad-input.exs
+```
+
+A program dealing with the handling of a bad input to a simple question.
