@@ -256,3 +256,11 @@ mix run 31-heart-rate.exs
 ```
 
 A program to display heart rate information in a table.
+
+### 32. Gues the number
+
+```
+mix run 32-guess-the-number.exs
+```
+
+A game to guess a number - for doing infinite game loops.
