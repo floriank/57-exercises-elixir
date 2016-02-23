@@ -18,7 +18,7 @@ defmodule MultiplicationTable do
       :error ->
         puts "Not a number!"
         ask
-      {number, ""} -> number
+      {number, ""} -> { number, number }
       {_, _} ->
         puts "Please enter a whole number!"
         ask
@@ -26,16 +26,27 @@ defmodule MultiplicationTable do
   end
 
   @doc """
-  print a simple multiplication "table"
+  print one multiplication "table" column (the number)
   """
-  def display_table(number) do
-    for n <- Range.new(0, number) do
-      for m <- Range.new(0, n) do
-        puts "#{n} x #{m} = #{n * m}"
-      end
+  def display_table_column({ number, multiplicator }) do
+    number = abs(number)
+    if multiplicator != -1 do
+      puts "#{number} x #{multiplicator} =  #{number * multiplicator}"
+      display_table_row({ number - 1, multiplicator})
+      display_table_column({ number, multiplicator - 1 })
+    end
+  end
+
+  @doc """
+  print one multiplication "table" row (the multiplicator)
+  """
+  def display_table_row({ number, multiplicator }) do
+    if number != -1 do
+      puts "#{number} x #{multiplicator} =  #{number * multiplicator}"
+      display_table_row({ number - 1, multiplicator })
     end
   end
 end
 
-MultiplicationTable.ask |> MultiplicationTable.display_table
+MultiplicationTable.ask |> MultiplicationTable.display_table_column
 
