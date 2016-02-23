@@ -240,3 +240,11 @@ mix run 29-bad-input.exs
 ```
 
 A program dealing with the handling of a bad input to a simple question.
+
+### 30. Multiplication table
+
+```
+mix run 30-multiplication-table
+```
+
+A program that displays a multiplication table for a given number.
