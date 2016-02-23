@@ -224,3 +224,11 @@ mix run 27-validating-input.exs
 ```
 
 Use validation functions to sanitize user inputs
+
+### 28. Adding numbers
+
+```
+mix run 28-adding-numbers.exs
+```
+
+A program to add several numbers together.
