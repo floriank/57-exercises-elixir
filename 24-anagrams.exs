@@ -3,6 +3,9 @@ defmodule Anagrams do
   import IO, only: [gets: 1, puts: 1]
   import String, only: [rstrip: 1, downcase: 1, replace: 3]
 
+  @doc """
+  Ask the user for two words and decides if they are anagrams of each other
+  """
   def ask do
     first = question("What is the first word?")
     second = question("What is the second word?")
@@ -21,7 +24,10 @@ defmodule Anagrams do
       |> replace(" ", "")
   end
 
-  defp anagram?(first, second) do
+  @doc """
+  Decides whether or not two words are anagrams of each other
+  """
+  def anagram?(first, second) do
     first_list = String.to_char_list(first)
     second_list = String.to_char_list(second)
 
