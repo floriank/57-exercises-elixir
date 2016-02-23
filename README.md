@@ -264,3 +264,11 @@ mix run 32-guess-the-number.exs
 ```
 
 A game to guess a number - for doing infinite game loops.
+
+### 33. Magic 8 Ball
+
+```
+mix run 33-magic-eight-ball.exs
+```
+
+A magic 8 ball!
