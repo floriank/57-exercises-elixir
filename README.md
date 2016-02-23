@@ -248,3 +248,11 @@ mix run 30-multiplication-table
 ```
 
 A program that displays a multiplication table for a given number.
+
+### 31. Karvonen Heart rate
+
+```
+mix run 31-heart-rate.exs
+```
+
+A program to display heart rate information in a table.
