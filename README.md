@@ -208,3 +208,11 @@ mix run 24-anagrams.exs
 ```
 
 A small program to compare two inputs to see if they are anagrams of each other.
+
+### 25. Password strength checker
+
+```
+mix run 25-password-strength.exs
+```
+
+A program to check the strength of a given password.
