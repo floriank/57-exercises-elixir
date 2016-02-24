@@ -273,10 +273,18 @@ mix run 33-magic-eight-ball.exs
 
 A magic 8 ball!
 
-### 34. employee list removal
+### 34. Employee list removal
 
 ```
 mix run 34-employee-list-removal.exs
 ```
 
 A simple list edit on a fixed list.
+
+### 35. Picking a winner
+
+```
+mix run 35-picking-a-winner.exs
+```
+
+A program to randomly pick an item from a list generated of inputs.
