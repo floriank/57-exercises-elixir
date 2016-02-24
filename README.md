@@ -272,3 +272,11 @@ mix run 33-magic-eight-ball.exs
 ```
 
 A magic 8 ball!
+
+### 34. employee list removal
+
+```
+mix run 34-employee-list-removal.exs
+```
+
+A simple list edit on a fixed list.
