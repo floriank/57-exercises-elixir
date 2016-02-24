@@ -288,3 +288,11 @@ mix run 35-picking-a-winner.exs
 ```
 
 A program to randomly pick an item from a list generated of inputs.
+
+### 36. computing statistics
+
+```
+mix run 36-computing-statistics.exs
+```
+
+Ask the user for a set of numbers until they are 'done'. Then compute a set of numbers from the initial set.
