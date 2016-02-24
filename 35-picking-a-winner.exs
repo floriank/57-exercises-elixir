@@ -16,14 +16,17 @@ defmodule PickingWinner do
     case contestants do
       :error ->
         puts "Not a number! try again"
+        ask
       {0, _ } ->
         puts "Not a valid number"
+        ask
       {number, _} ->
         ask_contestants(abs(number))
     end
   end
 
   def pick(list) do
+    :random.seed(:os.timestamp)
     Enum.random(list)
   end
 
