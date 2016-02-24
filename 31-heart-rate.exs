@@ -1,5 +1,5 @@
 defmodule HeartRate do
-  @doc """
+  @moduledoc """
   A program to list the heart rate based on the Karvonen Heart rate formula
   """
 

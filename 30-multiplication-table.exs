@@ -1,5 +1,5 @@
 defmodule MultiplicationTable do
-  @doc """
+  @moduledoc """
   a program to display a multiplication table
   """
 

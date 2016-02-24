@@ -1,5 +1,5 @@
 defmodule MagicEightball do
-  @doc """
+  @moduledoc """
   a magic 8-Ball that gives you an answer to your question. Not really.
   """
 

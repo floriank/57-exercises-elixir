@@ -1,4 +1,7 @@
 defmodule CharacterCount do
+  @moduledoc """
+  a module to count characters
+  """
   import IO, only: [gets: 1, puts: 1]
   @question "What is the input string?\n"
 

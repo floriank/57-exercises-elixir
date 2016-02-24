@@ -1,5 +1,5 @@
 defmodule ComputingInterest do
-  @doc """
+  @moduledoc """
   computes interest values after a certain number of years have passed based on initial investment
   """
 

@@ -1,5 +1,5 @@
 defmodule ValidatingPasswords do
-  @doc """
+  @moduledoc """
   A simple password validator to test if/else conditions
   """
 

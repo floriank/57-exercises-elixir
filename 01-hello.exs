@@ -1,4 +1,8 @@
 defmodule Hello do
+  @moduledoc """
+  Simple Hello World module
+  """
+
   import IO, only: [{:puts, 1}, {:gets, 1}]
   @question "What is your name? \n"
 

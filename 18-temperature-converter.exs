@@ -1,5 +1,5 @@
 defmodule TemperatureConverter do
-  @doc """
+  @moduledoc """
   converts from fahrenheit to celsius and vise-versa
   """
 

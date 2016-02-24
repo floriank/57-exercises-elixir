@@ -1,5 +1,5 @@
 defmodule TaxCalculator do
-  @doc """
+  @moduledoc """
   provides tax calculation based on the state of the user
   """
 

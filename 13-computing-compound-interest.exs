@@ -1,5 +1,5 @@
 defmodule ComputingCompundInterest do
-  @doc """
+  @moduledoc """
   a module that computes compound interest based on the users inputs
   """
 

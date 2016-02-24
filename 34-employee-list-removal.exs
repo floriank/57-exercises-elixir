@@ -1,5 +1,5 @@
 defmodule EmployeeList do
-  @doc """
+  @moduledoc """
   a module for demoing the removal of an item from a list
   """
   @list [

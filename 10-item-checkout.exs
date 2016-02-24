@@ -1,5 +1,5 @@
 defmodule ItemCheckout do
-  @doc """
+  @moduledoc """
   The module implements a simple checkout by asking the user for a number of items then calculating a total with tax amount
 
   This uses the US model, in most European states tax is already included in the prices of items. Users there will therefore input the actual price and totals will be calculated afterwards

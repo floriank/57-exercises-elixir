@@ -1,5 +1,5 @@
 defmodule AddingNumbers do
-  @doc """
+  @moduledoc """
   a module that adds a total of n numbers
   """
   import Float, only: [parse: 1]

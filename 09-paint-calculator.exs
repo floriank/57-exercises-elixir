@@ -1,5 +1,5 @@
 defmodule PaintCalculator do
-  @doc """
+  @moduledoc """
   Caluclates the amount of paint needed to paint a certain surface
 
   Note: The exercise states imperial units. I am European and will use SI-units, instead of a gallon, I'll use the "bucket" as a placeholder as the amount of paint is irrelavent to the program, only how much surface it can cover

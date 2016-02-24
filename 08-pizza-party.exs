@@ -1,5 +1,5 @@
 defmodule PizzaParty do
-  @doc """
+  @moduledoc """
     The module deals with calculating the slices of a pizza distributed amongst
     a group of people of the size n, where n is an input given by the user.
   """

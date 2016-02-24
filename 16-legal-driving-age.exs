@@ -1,5 +1,5 @@
 defmodule LegalDrivingAge do
-  @doc """
+  @moduledoc """
   decides if a user is old enough to drive yet based on the age they input
   """
 

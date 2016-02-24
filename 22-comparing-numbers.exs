@@ -1,5 +1,5 @@
 defmodule ComparingNumbers do
-  @doc """
+  @moduledoc """
   the module finds the highest out of three given numbers, using no library builtin or otherwise
   """
 

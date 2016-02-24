@@ -1,5 +1,5 @@
 defmodule BadInput do
-  @doc """
+  @moduledoc """
   the module implements rule of 72, a quick way to estimate how long it will take to double an investment
 
   The focus is on handling all the bad inputs associated with the division of two number - 72 and the input

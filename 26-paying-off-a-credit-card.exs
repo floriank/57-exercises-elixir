@@ -1,5 +1,5 @@
 defmodule PayingOffCreditCard do
-  @doc """
+  @moduledoc """
   A module to determine how long it takes to pay off a credit card
   """
 

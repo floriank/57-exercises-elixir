@@ -1,5 +1,7 @@
 defmodule NumbersToNames do
-
+  @moduledoc """
+  convert given numbers to month names
+  """
   import IO, only: [gets: 1, puts: 1]
   import String, only: [rstrip: 1]
 

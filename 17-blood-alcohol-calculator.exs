@@ -1,5 +1,5 @@
 defmodule BloodAlcoholCalculator do
-  @doc """
+  @moduledoc """
   decides whether or not a user may drive based on the inputs about alcohol consumed and body measurements given (Bloob alcohol content, BAC)
   """
 

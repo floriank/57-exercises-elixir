@@ -1,5 +1,5 @@
 defmodule MultiStateTaxCalulator do
-  @doc """
+  @moduledoc """
   A tax calculator for multiple states in the US,
   tax is applied when the user lives in wisconsin or illinois,
   extra tax is applied if the county in Wisconsin is Eau Claire or Dunn

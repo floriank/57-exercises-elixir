@@ -1,5 +1,5 @@
 defmodule PasswordStrength do
-  @doc """
+  @moduledoc """
   A module for password checking
   """
 

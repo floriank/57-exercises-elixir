@@ -1,5 +1,5 @@
 defmodule CurrencyExchange do
-  @doc """
+  @moduledoc """
   A module to do currency exchange between EUR and USD
   """
 

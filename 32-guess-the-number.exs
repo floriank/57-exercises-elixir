@@ -1,5 +1,5 @@
 defmodule GuessTheNumber do
-  @doc """
+  @moduledoc """
   a simple game to guess a number
   """
 

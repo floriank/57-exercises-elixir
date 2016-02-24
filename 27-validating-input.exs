@@ -1,5 +1,5 @@
 defmodule ValidatingInput do
-  @doc """
+  @moduledoc """
   a module to test validation functions on some inputs
   """
   import IO, only: [gets: 1, puts: 1]

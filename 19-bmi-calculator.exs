@@ -1,5 +1,5 @@
 defmodule BmiCalculator do
-  @doc """
+  @moduledoc """
   calulates the bmi given a persons measurements
   """
 
