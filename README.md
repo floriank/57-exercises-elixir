@@ -313,3 +313,10 @@ mix run 38-filtering-values.exs
 
 Asks the user for a list of values, then filter out the numbers based on a criterium.
 
+### 39. Sorting records
+
+```
+mix run 39-sorting-records.exs
+```
+
+Given a list of initial records, sort them by a given field. Does _not_ contain the MySQL (i.e. database connected) version, as the sorting would then have to be done on the db side.
