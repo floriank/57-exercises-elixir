@@ -328,3 +328,11 @@ mix run 40-filtering-records.exs
 ```
 
 Given a list of records, filter out records based on a given string and dsiplay them as a table
+
+### 41. Name sorting
+
+```
+mix run 41-name-sorting.exs
+```
+
+Reads in a list of names from a file and sorts them alphabetically.
