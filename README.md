@@ -296,3 +296,11 @@ mix run 36-computing-statistics.exs
 ```
 
 Ask the user for a set of numbers until they are 'done'. Then compute a set of numbers from the initial set.
+
+## 37. Password generator
+
+```
+mix run 37-password-generator.exs
+```
+
+A password generation tool
