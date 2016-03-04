@@ -320,3 +320,11 @@ mix run 39-sorting-records.exs
 ```
 
 Given a list of initial records, sort them by a given field. Does _not_ contain the MySQL (i.e. database connected) version, as the sorting would then have to be done on the db side.
+
+### 40. Filtering records
+
+```
+mix run 40-filtering-records.exs
+```
+
+Given a list of records, filter out records based on a given string and dsiplay them as a table
