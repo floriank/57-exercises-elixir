@@ -361,3 +361,11 @@ mix run 44-product-search.exs
 ```
 
 A search over a static json file. Since Elixir has no native json support, Poison is used.
+
+### 45. Word finder
+
+```
+mix run 45-word-finder.exs
+```
+
+A search and repalce for the content of a given file.
