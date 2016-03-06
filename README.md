@@ -345,3 +345,11 @@ mix run 41-data-parsing.exs
 ```
 
 Reads in a CSV file with a custom built algorithm, then displays it's contents as a table.
+
+### 43. Website generator
+
+```
+mix run 43-website-generator.exs
+```
+
+Simple generator to create a folder with files.
