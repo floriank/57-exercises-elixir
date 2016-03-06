@@ -336,3 +336,12 @@ mix run 41-name-sorting.exs
 ```
 
 Reads in a list of names from a file and sorts them alphabetically.
+
+
+### 42. Data parsing
+
+```
+mix run 41-data-parsing.exs
+```
+
+Reads in a CSV file with a custom built algorithm, then displays it's contents as a table.
