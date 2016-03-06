@@ -18,7 +18,7 @@ defmodule WordFrequency do
   """
   def read(file) do
     case File.open(file, [:read, :compressed]) do
-      {:ok, device} -> IO.read device, :line
+      {:ok, device} -> IO.read device, :all
       {:error, _} -> :error
     end
   end
@@ -36,6 +36,8 @@ defmodule WordFrequency do
   def count(contents) do
     String.split(contents, " ")
       |> Enum.map(&String.strip/1)
+      |> reject_empty
+      |> replace_special
       |> count_occurences(%{})
   end
 
@@ -48,9 +50,13 @@ defmodule WordFrequency do
   end
 
   defp stars(number) do
-    Range.new(1, number)
+    cond do
+      number > 40 -> 1..40
+      true -> Range.new(1, number)
+    end
     |> Enum.map(fn _ -> "*" end)
     |> Enum.join
+    |> numbers(number)
   end
 
   defp count_occurences([], acc), do: acc
@@ -62,8 +68,31 @@ defmodule WordFrequency do
     end
     count_occurences(tail, Map.put(acc, head, value))
   end
+
+  defp numbers(stars, number) when number > 40 do
+    "#{stars} (#{number})"
+  end
+
+  defp numbers(stars, _) do
+    stars
+  end
+
+  defp replace_special(list) do
+    Stream.map(list, fn(item) ->
+      Task.async(fn() ->
+        String.replace(item, ~r/[^\w\s]/, "")
+        |> String.downcase
+      end)
+    end)
+    |> Enum.map(&Task.await/1)
+  end
+
+  defp reject_empty(list) do
+    Enum.reject(list, fn (word) -> String.match?(word, ~r/[^\w\s]/) end)
+    |> Enum.reject(fn item -> String.length(item) == 0 end)
+  end
 end
 
-WordFrequency.read
+WordFrequency.read("files/shakespeare.txt.gz")
   |> WordFrequency.count
   |> WordFrequency.print
