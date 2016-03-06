@@ -360,4 +360,4 @@ Simple generator to create a folder with files.
 mix run 44-product-search.exs
 ```
 
-A search over a static json file.
+A search over a static json file. Since Elixir has no native json support, Poison is used.
