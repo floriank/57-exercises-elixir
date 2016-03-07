@@ -385,3 +385,11 @@ mix run 47-who-is-in-space.exs
 ```
 
 A program that calls the [OpenNotify API](http://api.open-notify.org/astros.json) and lists the results in the terminal.
+
+### 48. Grabbing the weather
+
+```
+OWM_KEY=<your_key> mix run 48-grabbing-the-weather.exs
+```
+
+Grabs the location of the user and then tries to get weather information based on that location from [OpenWeatherMap](http://openweathermap.org).
