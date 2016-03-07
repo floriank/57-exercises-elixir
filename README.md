@@ -384,4 +384,4 @@ A program to count word occurences - the default version uses a text provided in
 mix run 47-who-is-in-space.exs
 ```
 
-A program that calls the [NASA API](http://www.howmanypeopleareinspacerightnow.com/peopleinspace.json) and lists the results in the terminal.
+A program that calls the [OpenNotify API](http://api.open-notify.org/astros.json) and lists the results in the terminal.
