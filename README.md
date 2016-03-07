@@ -377,3 +377,11 @@ mix run 46-word-frequency.exs
 ```
 
 A program to count word occurences - the default version uses a text provided in `./files`. the exercises also states it should be tests with a longer text, e.g. [this one](http://www.gutenberg.org/cache/epub/100/pg100.txt) - A compressed file for usage was added - Elixir supports the reading of compressed files on the fly.
+
+### 47 - Who is in space?
+
+```
+mix run 47-who-is-in-space.exs
+```
+
+A program that calls the [NASA API](http://www.howmanypeopleareinspacerightnow.com/peopleinspace.json) and lists the results in the terminal.
